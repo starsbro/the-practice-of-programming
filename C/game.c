@@ -110,13 +110,19 @@ void generate(int nwords)
     for (i = 0; i < nwords; i++)
     {
         sp = lookup(prefix, 0);
+
+        // Reservoir Sampling Algorithm
         nmatch = 0;
         for (suf = sp->suf; suf != NULL; suf = suf->next)
             if (rand() % ++nmatch == 0) /*prob = 1/nmatch */
                 W = suf->word;
+
         if (strcmp(W, NONWORD) == 0)
             break;
+
         printf("%s\n", W);
+
+        // Update Prefix (Sliding Window):
         memmove(prefix, prefix + 1, (NPREF - 1) * sizeof(prefix[0]));
         prefix[NPREF - 1] = W;
     }
