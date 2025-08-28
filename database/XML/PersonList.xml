@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PersonList Type="Employee">
+    <Title Value="Employee List"></Title>
+    <Contents>
+        <Employee>
+            <Name>Ann Jones</Name>
+            <No>10102</No>
+            <Deptno>d3</Deptno>
+            <Address>
+                <City>Dallas</City>
+                <Street>Main St</Street>
+            </Address>
+        </Employee>
+        <Employee>
+            <Name>John Barrimore</Name>
+            <No>18316</No>
+            <Deptno>d1</Deptno>
+            <Address>
+                <City>Seattle</City>
+                <Street>Abbey Rd</Street>
+            </Address>
+        </Employee>
+    </Contents>
+</PersonList>
